@@ -5,7 +5,7 @@ from flask.app import Flask
 from flask import flash, jsonify, request, render_template
 
 
-novo_pokemon = Pokemon(1, "Pikachu", 'Eletrico', 'Masculino')
+novo_pokemon = Pokemon(1, 'Charizard', 'Voador/fogo', 'Masculino')
 novo_pokemon_dao = PokemonDAO(novo_pokemon)
 db.insert_in_BD(novo_pokemon_dao.to_json())
 

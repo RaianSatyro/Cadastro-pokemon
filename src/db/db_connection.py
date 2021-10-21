@@ -2,7 +2,7 @@ import json
 import os
 
 class DataBase():
-    def init(self):
+    def __init__(self):
         self.cwd = os.getcwd()
 
     def open_in_read_mode(self):
@@ -20,7 +20,8 @@ class DataBase():
             arquivo.write(json.dumps(db_json_list))
             arquivo.close()
             return True
-        except:
+        except ValueError: 
+            print(ValueError)
             return False
 
 db = DataBase()

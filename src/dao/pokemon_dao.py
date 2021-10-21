@@ -1,5 +1,5 @@
 class PokemonDAO():
-    def init(self, instancia_poke):
+    def __init__(self, instancia_poke):
         self._pokemon_json = {}
         self.preenche_valores_json(instancia_poke)
 
@@ -12,6 +12,6 @@ class PokemonDAO():
     def to_json(self):
         return self._pokemon_json
 
-    def str(self):
+    def __str__(self):
         return str(self._pokemon_json)
 #Pokemon
