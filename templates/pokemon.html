@@ -1,0 +1,135 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+   <body>
+
+      <form class="box" action="login" method="POST">
+         <div>
+             <h1 id="titulo"><strong><marquee>Cadastre seu Pokemon</marquee></strong></h1>
+             <p id="sub"><strong>complete as informações</strong></p>
+             <br>
+         </div>
+     <br><br>
+
+         <form>
+               <fieldset>
+                  <div class="campo">
+                     <label for="ID"><strong>ID</strong></label>
+                     <input type="text" name="ID" id = "ID" required>
+                  </div>
+
+                  <div class="campo">
+                     <label for="nome"><strong>Nome</strong></label>
+                     <input type="text" name="nome" id="nome" required>
+                  
+                  <div class="campo">
+                     <label for="sexo"><strong>Sexo</strong></label>
+                     <input type="text" name="sexo" id="sexo" required>
+
+                  <!-- <div class="campo">
+                     <label for="tipe"><strong>Tipo</strong></label>
+                     <select id="tipo">
+                        <option selected disabled value="">Escolha qual tipo de pokemon</option>
+
+                     <option>Inseto</option>
+                     <option>Trevas</option>
+                     <option>Dragão</option>
+                     <option>Eletrico</option>
+                     <option>Fada</option>
+                     <option>Lutador</option>
+                     <option>Fogo</option>
+                     <option>Voador</option>
+                     <option>Fantasma</option>
+                     <option>Grama</option>
+                     <option>Terra</option>
+                     <option>Gelo</option>
+                     <option>Normal</option>
+                     <option>Veneno</option>
+                     <option>Psíquico</option>
+                     <option>Rocha</option>
+                     <option>Metal</option>
+                     <option>Agua</option>
+                     </select>
+
+
+                  </div> -->
+               </fieldset>
+               
+               <fieldset class="grupo">
+                  <div id="check">
+                      <h2><label><strong> Selecione o tipo do Pokemon </strong> (pode marcar mais de 1)</label></h2><br><br>
+
+                      <input type="checkbox" id="inseto" name="inseto" value="inseto">
+                      <label for="producao">Inseto</label>
+
+                      <input type="checkbox" id="trevas" name="trevas" value="trevas">
+                      <label for="trevas">Trevas</label>
+                      
+                      <input type="checkbox" id="dragao" name="dragao" value="dragao">
+                      <label for="dragao">Dragão</label>
+                      
+                      <br><br>
+
+                      <input type="checkbox" id="eletrico" name="eletrico" value="eletrico">
+                      <label for="eletrico">Elétrico</label>
+
+                      <input type="checkbox" id="fada" name="fada" value="fada">
+                      <label for="fada">Fada</label>
+
+                      <input type="checkbox" id="lutador" name="lutador" value="lutador">
+                      <label for="lutador">Lutador</label>
+                      
+                      <br><br>
+
+                      <input type="checkbox" id="fogo" name="fogo" value="fogo">
+                      <label for="fogo">Fogo</label>
+                      
+                      <input type="checkbox" id="voador" name="voador" value="voador">
+                      <label for="voador">Voador</label>
+                      
+                      <input type="checkbox" id="agua" name="agua" value="agua">
+                      <label for="agua">Agua</label>
+
+                      <br><br>
+                     
+                      <input type="checkbox" id="fantasma" name="fantasma" value="fantasma">
+                      <label for="fantasma">Fantasma</label>
+
+                      <input type="checkbox" id="grama" name="grama" value="grama">
+                      <label for="grama">Grama</label>
+
+                      <input type="checkbox" id="terra" name="terra" value="terra">
+                      <label for="terra">Terra</label>
+
+                      <br><br>
+
+                      <input type="checkbox" id="gelo" name="gelo" value="gelo">
+                      <label for="gelo">Gelo</label>
+
+                      <input type="checkbox" id="normal" name="normal" value="normal">
+                      <label for="normal">Normal</label>
+
+                      <input type="checkbox" id="venenoso" name="venenoso" value="venenoso">
+                      <label for="venenoso">Venenoso</label>
+
+                      <br><br>
+
+                      <input type="checkbox" id="psiquico" name="psiquico" value="psiquico">
+                      <label for="psiquico">Psíquico</label>
+
+                      <input type="checkbox" id="rocha" name="rocha" value="rocha">
+                      <label for="rocha">Rocha</label>
+
+                      <input type="checkbox" id="metal" name="metal" value="metal">
+                      <label for="metal">Metal</label>
+
+
+                  </div>
+              </fieldset>
+              <button type="submit" class="botao">Concluído</button>
+         </form>
+      </div>
+
+   </body>
+</html>
